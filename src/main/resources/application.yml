@@ -4,7 +4,7 @@ spring:
   datasource:
     ###################主数据源配置#####################
     driver-class-name: com.mysql.jdbc.Driver
-    url: jdbc:mysql://111.231.11.62:3306/data_utils?characterEncoding=utf8&useSSL=false&serverTimezone=Hongkong&allowPublicKeyRetrieval=true&allowMultiQueries=true
+    url: jdbc:mysql://localhost:3306/data_utils?characterEncoding=utf8&useSSL=false&serverTimezone=Hongkong&allowPublicKeyRetrieval=true&allowMultiQueries=true
     username: root
     password: 123456
     ###################以上主数据源配置#####################
