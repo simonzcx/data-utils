@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.mingcloud.data.mapper.slave2.Slave2DataBaseMapper">
+    <resultMap id="BaseResultMap" type="com.mingcloud.data.entity.DataBaseEntity">
+
+    </resultMap>
+
+    <parameterMap id="dataBaseEntity" type="com.mingcloud.data.entity.DataBaseEntity"/>
+
+    <select id="selectAllTableName" resultType="com.mingcloud.data.entity.DataBaseEntity">
+		select
+		TABLE_SCHEMA AS dataBaseName,
+		 TABLE_NAME AS tableName
+		from information_schema.tables
+		where TABLE_SCHEMA=#{dataBaseName};
+	</select>
+
+
+</mapper>
