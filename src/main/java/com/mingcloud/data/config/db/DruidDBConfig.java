@@ -68,6 +68,7 @@ public class DruidDBConfig {
     private String mapperLocations;
 
 
+
     @Bean // 声明其为Bean实例
     @Primary // 在同样的DataSource中，首先使用被标注的DataSource
     @Qualifier("adiDataSource")
